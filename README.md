@@ -1,5 +1,7 @@
 # Modern Udemig Bootstrap Project
 
+![](udemig.gif)
+
 ## What I Practice
 
  - Bootstrap kullanılarak proje geliştirildi.
