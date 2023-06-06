@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300&display=swap");
+* {
+  font-family: "Poppins";
+}
+
+.navbar {
+  background: linear-gradient(112deg, rgb(50, 61, 61) 10%, rgb(148, 148, 194) 72%);
+}
+.navbar-brand {
+  font-family: "Poppins";
+}
+.navbar-nav a {
+  color: #27296d;
+}
+
+.navbar-nav a {
+  color: white;
+}
+
+/* CAROUSEL */
+.carousel {
+  position: relative;
+  background-color: white;
+}
+.carousel img {
+  border-radius: 50%;
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.7;
+}
+@media (max-width: 800px) {
+  .carousel img {
+    height: 350px;
+  }
+}
+.carousel-caption {
+  top: 50%;
+}
+.carousel-caption h5,
+.carousel-caption p {
+  text-shadow: 1px 5px 4px black;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.8s;
+  box-shadow: 2px 2px 15px rgb(228, 223, 223);
+}
+
+/* TILE */
+.title {
+  background: linear-gradient(115deg, rgb(34, 34, 34) 7.3%, rgb(0, 40, 60) 51.6%, rgb(0, 143, 213) 93.4%);
+}
+.title .breadcrumb-item::before {
+  color: white !important;
+}
+
+/* BLOG */
+.blog .card:hover {
+  transform: scale(1);
+  box-shadow: 2px 2px 9px rgb(226, 216, 216);
+  transition: ease 0.7s;
+}
+
+/* ABOUT CARD EFFECT1 */
+.about .card {
+  box-shadow: 3px 3px 9px rgb(219, 211, 211);
+}
+.about .card:hover {
+  transform: translate(3px, -2px);
+  transition: ease 0.7s;
+}
+.about .card:hover img {
+  transition: ease 0.7s;
+  transform: translateY(-5px);
+}
+.about .card:hover .card-body h5 {
+  transition: ease 0.7s;
+  color: green !important;
+  font-weight: 700;
+}
+
+/* ACCORDION */
+.accordion {
+  background: linear-gradient(to left, rgba(77, 126, 190, 0.767), rgba(142, 164, 206, 0.623));
+}
+
+li a:hover {
+  transform: scale(1.1);
+  transition: all 0.6s;
+}
+
+.nav-item i:hover {
+  color: rgb(74, 118, 240);
+}
+.nav-item i :not(:nth-child(3)) {
+  color: saddlebrown;
+}/*# sourceMappingURL=style.css.map */

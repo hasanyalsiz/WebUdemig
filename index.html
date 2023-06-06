@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemig</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <!--  
+        col-sm 576 ve daha buyuk
+        col-md 768 ve daha buyuk
+        col-lg 992 ve daha buyuk
+        col-xl 1200 ve daha buyuk
+        navbar-expand-lg => large genisligine kadar dropdown kalsin
+        sticky-top - b'z' ]sten tak'p eder
+     -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  sticky-top">
+        <div class="container-fluid">
+            <div class="d-flex flex-column align-items-center">
+                <img src="image/udemig.png" width="72" height="45" alt="">
+                <a class="navbar-brand fs-6 fw-bold p-0 text-white" style="font-size: 20px;" href="#top">&ensp;
+                    Udemig</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex  justify-content-end  ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/index.html">ANA SAYFA</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            KATIL
+                        </a>
+                        <ul class="dropdown-menu bg-dark text-white">
+                            <li><a class="dropdown-item text-uppercase " href="/login.html">Giriş Yap</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-uppercase " href="/register.html">Kayıt Ol</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase " href="/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/about.html">HAKKIMIZDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/contact.html">BİZE ULAŞIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="banner my-5">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <span class="text-success fw-bold">UZMAN EĞİTİMİ</span>
+                    <h1 class="display-4 fw-semibold lh-base">Yeni beceriler öğrenmenin uygun kolay yolu!</h1>
+                    <p class="fw-light">Profesyoneller olarak geliştirebileceğimiz en önemli alanlardan biri bilgiye erişme ve bilgiyi paylaşma yetkinliğidir
+                    </p>
+                    <button class="btn bg-primary-subtle fw-bolder p-3 ">KURSLARIMIZ</button>
+                </div>
+                <div class="col-md-6 col-12 pt-2">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="image/slayt1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="fw-bolder">Uzman Öğretmen</h5>
+                                    <p>Bilgisayar da dahil olmak üzere çeşitli ana dallarda kariyer için beceriler geliştirmek.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/slayt2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="fw-bolder">Kişisel Gelişim</h5>
+                                    <p>Bilgisayar da dahil olmak üzere çeşitli ana dallarda kariyer için beceriler geliştirin.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/slayt3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="fw-bolder">Uzman Öğretmen</h5>
+                                    <p>Dil dahil olmak üzere çeşitli ana dallarda kariyer için beceriler geliştirmek.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EDUCATION RATE -->
+    <div class="rate bg-dark rounded-5 mx-4">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col d-flex flex-column align-items-center py-4 ">
+                    <img src="https://www.svgrepo.com/show/475729/camera.svg" width="64" alt="">
+                    <p class="fs-1">90</p>
+                    <span class=" text-secondary fs-5 text-center ">Eğitmenler</span>
+                </div>
+                <div class="col d-flex flex-column align-items-center py-4">
+                    <img src="https://www.svgrepo.com/show/448792/layers.svg" width="64" alt="">
+                    <p class="fs-1">1450</p>
+                    <span class=" text-secondary fs-5 text-center ">Toplam Kurs</span>
+                </div>
+                <div class="col d-flex flex-column align-items-center py-4">
+                    <img src="https://www.svgrepo.com/show/475784/flag.svg" width="64" alt="">
+                    <p class="fs-1">5697</p>
+                    <span class=" text-secondary fs-5 text-center ">Kayıtlı Kayıtlar</span>
+                </div>
+                <div class="col d-flex flex-column align-items-center py-4">
+                    <img src="https://www.svgrepo.com/show/442204/help-browser-symbolic.svg" width="64" alt="">
+                    <p class="fs-1">100%</p>
+                    <span class=" text-secondary fs-5 text-center ">Memnuniyet Oranı</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="album my-5">
+        <div class="album-title text-center mb-5">
+            <p class="text-success fw-bold">BLOG HABERLERİ</p>
+            <h2 class="fw-bolder">Blogdan Son Haberler</h2>
+            <span>Kişisel hedeflerine ulaşmak isteyenler için nihai planlama çözümü</span>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2">
+                <div class="col ">
+                    <div class="card">
+                        <img src="https://udemig.com/assets/images/blog/blog2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-primary-subtle">
+                            <span class="card-calender" style="font-size: 12px;">Written by <b
+                                    class="text-success">Mehmet Can Seyhan</b> 9 May 2022</span>
+                            <p class="card-text pt-4 fs-3 fw-bolder">Aşı, Hiçbir Şeyin Yeniden Açılmasına Yardımcı Olmayacak
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://udemig.com/assets/images/blog/blog1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-primary-subtle">
+                            <span class="card-calender" style="font-size: 12px;">Written by <b
+                                    class="text-success">Mehmet Can Seyhan</b> 9 May 2022</span>
+                            <p class="card-text pt-4 fs-3 fw-bolder">Yazılım Kıyamet Günü Aracıdır</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://udemig.com/assets/images/blog/blog3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-primary-subtle">
+                            <span class="card-calender" style="font-size: 12px;">Written by <b
+                                    class="text-success">Mehmet Can Seyhan</b> 9 May 2022</span>
+                            <p class="card-text pt-4 fs-3 fw-bolder">Yazılım bir Ürün değildir</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <div class="bg-dark text-white ">
+
+        <div class="container">
+            <footer class="pt-5">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-3 mb-3 text-center ">
+                        <h5>Hakkımızda</h5>
+                        <ul class="nav flex-column ">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">
+                                    Tel: <b class="text-white-50 fw-light">+(46) 70 431 2038</b>
+                                </a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Email: <b
+                                        class="text-white-50 fw-light">info@udemig.dev</b></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Yer: <b
+                                        class="text-white-50 fw-light">PriStokholm, İsveç</b></a></li>
+                            <li class="nav-item mb-2">
+                                <b class="fw-light">Bizi takip edin:</b>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram ins"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-3 mb-3 text-center">
+                        <h5>Keşfetmek</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Hakkımızda</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Bize Ulaşın</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-3 mb-3 text-center">
+                        <h5>Dersler</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Çocuklar için Web</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Yetişkinler için
+                                    Web</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Yetişkinler İçin
+                                    Mentorluk</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-3 mb-3 text-center">
+                        <h5>Yasal</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Şartlar ve
+                                    koşullar</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Gizlilik
+                                    Politikası</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">İade politikasi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top border-secondary row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="image/udemig.png" width="92" height="54" alt="">
+                            <a class="navbar-brand fs-6 fw-bold p-0 pe-3 text-white" style="font-size: 20px;" href="#top">&ensp;
+                                Udemig</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>© Copyright Udemig 2022</p>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
+</html>
